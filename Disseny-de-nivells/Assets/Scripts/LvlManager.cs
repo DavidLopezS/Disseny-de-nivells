@@ -8,6 +8,8 @@ public class LvlManager : MonoBehaviour {
 
     private PlayerController player;
 
+    public GameObject endParticle;
+
 	// Use this for initialization
 	void Start () {
         player = FindObjectOfType<PlayerController>();
