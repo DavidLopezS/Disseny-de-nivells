@@ -3219,7 +3219,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCheckPoint: {fileID: 1257340203}
-  endParticle: {fileID: 0}
+  deathParticle: {fileID: 1517897704804564, guid: 374c87bb4b4e9224f9455382803652b2,
+    type: 2}
+  respawnParticle: {fileID: 1243844338370384, guid: eede9615ffcea6d47b046e0e248ed7a7,
+    type: 2}
+  respawnDealy: 1
 --- !u!1 &1028703802
 GameObject:
   m_ObjectHideFlags: 0

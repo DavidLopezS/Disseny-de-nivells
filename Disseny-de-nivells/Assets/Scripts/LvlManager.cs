@@ -8,7 +8,9 @@ public class LvlManager : MonoBehaviour {
 
     private PlayerController player;
 
-    public GameObject endParticle;
+    public GameObject deathParticle;
+    public GameObject respawnParticle;
+    public float respawnDealy;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +23,20 @@ public class LvlManager : MonoBehaviour {
 	}
 
     public void RespawnPlayer(){
+
+        StartCoroutine("RespawnPlayerCo");
+        
+    }
+
+    public IEnumerator RespawnPlayerCo()
+    {
+        Instantiate(deathParticle, player.transform.position, player.transform.rotation);
+        player.enabled = false;
+        player.GetComponent<Renderer>().enabled = false;
+        yield return new WaitForSeconds(respawnDealy);
         player.transform.position = currentCheckPoint.transform.position;
+        player.enabled = true;
+        player.GetComponent<Renderer>().enabled = true;
+        Instantiate(respawnParticle, currentCheckPoint.transform.position, currentCheckPoint.transform.rotation);
     }
 }
