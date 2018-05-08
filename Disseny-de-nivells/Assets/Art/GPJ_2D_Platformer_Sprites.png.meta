@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 120007aa6437bdb4a97100fabd516ba9
-timeCreated: 1525620098
+timeCreated: 1525779930
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -9,6 +9,7 @@ TextureImporter:
     21300004: Spikes
     21300006: Enemy
     21300008: Stairs
+    21300010: LvlExit
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -143,6 +144,20 @@ TextureImporter:
         y: 80
         width: 16
         height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LvlExit
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 48
+        width: 19
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
