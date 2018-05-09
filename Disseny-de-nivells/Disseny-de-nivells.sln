@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disseny-de-nivells", "Assembly-CSharp.csproj", "{D0915D67-1915-794F-962D-07B0B12A217D}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disseny-de-nivells", "Disseny-de-nivells.csproj", "{FEE3F017-8367-C772-E566-22636590D9DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D0915D67-1915-794F-962D-07B0B12A217D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0915D67-1915-794F-962D-07B0B12A217D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0915D67-1915-794F-962D-07B0B12A217D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0915D67-1915-794F-962D-07B0B12A217D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEE3F017-8367-C772-E566-22636590D9DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEE3F017-8367-C772-E566-22636590D9DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEE3F017-8367-C772-E566-22636590D9DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEE3F017-8367-C772-E566-22636590D9DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
