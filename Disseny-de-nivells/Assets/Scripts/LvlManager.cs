@@ -11,6 +11,7 @@ public class LvlManager : MonoBehaviour {
     public GameObject deathParticle;
     public GameObject respawnParticle;
     public GameObject spikes;
+    public GameObject enemies;
     public float respawnDealy;
 
 	// Use this for initialization
@@ -26,6 +27,11 @@ public class LvlManager : MonoBehaviour {
             foreach(BoxCollider2D trigger in theSpikes)
             {
                 trigger.enabled = (!trigger.enabled );
+            }
+            BoxCollider2D[] theEnemies = enemies.GetComponentsInChildren<BoxCollider2D>();
+            foreach(BoxCollider2D trigger in theEnemies)
+            {
+                trigger.enabled = (!trigger.enabled);
             }
         }
 	}
