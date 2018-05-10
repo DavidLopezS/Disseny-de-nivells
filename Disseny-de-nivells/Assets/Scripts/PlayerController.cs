@@ -13,7 +13,6 @@ public class PlayerController : MonoBehaviour {
     private bool grounded;
 
     private bool doubleJumped;
-
     private Rigidbody2D myRigidBody2D;
 
     public bool onStairs;
@@ -49,10 +48,10 @@ public class PlayerController : MonoBehaviour {
             doubleJumped = true;
         }if (Input.GetKey(KeyCode.D))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, myRigidBody2D.velocity.y);
         }if (Input.GetKey(KeyCode.A))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, myRigidBody2D.velocity.y);
         }
 
         if (onStairs)

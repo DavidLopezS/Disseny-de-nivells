@@ -10,6 +10,7 @@ public class LvlManager : MonoBehaviour {
 
     public GameObject deathParticle;
     public GameObject respawnParticle;
+    public GameObject spikes;
     public float respawnDealy;
 
 	// Use this for initialization
@@ -19,7 +20,14 @@ public class LvlManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (Input.GetKeyDown(KeyCode.G))
+        {
+            BoxCollider2D[] theSpikes = spikes.GetComponentsInChildren<BoxCollider2D>();
+            foreach(BoxCollider2D trigger in theSpikes)
+            {
+                trigger.enabled = (!trigger.enabled );
+            }
+        }
 	}
 
     public void RespawnPlayer(){

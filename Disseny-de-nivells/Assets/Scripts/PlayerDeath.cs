@@ -13,7 +13,9 @@ public class PlayerDeath : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+            lvlManager.RespawnPlayer();
 	}
 
     void OnTriggerEnter2D(Collider2D other){
