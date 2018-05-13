@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Levels/Level Selector.unity
+- path: Assets/Levels/Splash Screen.unity
   isLoaded: 1
   isActive: 1

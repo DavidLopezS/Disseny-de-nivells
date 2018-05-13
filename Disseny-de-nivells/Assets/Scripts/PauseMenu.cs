@@ -6,7 +6,7 @@ public class PauseMenu : MonoBehaviour {
 
     public string levelSelect;
 
-    public bool isPaused;
+    private bool isPaused;
     public GameObject pauseMenuCanvas;
 	
 	// Update is called once per frame
@@ -25,6 +25,11 @@ public class PauseMenu : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.P))
         {
             isPaused = !isPaused;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            isPaused = false;
         }
 	}
 

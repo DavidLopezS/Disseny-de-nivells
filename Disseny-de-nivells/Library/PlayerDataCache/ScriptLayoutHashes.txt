@@ -138,4 +138,6 @@ eeb6d3a210836029e8b4726d8c596ff5 Assembly-CSharp.dll:.MovingPlatform
 88088547cc78f839a48cf50e29eb230d Assembly-CSharp.dll:.LvlManager
 fcf5e1edb455496e10a83bdfc925a920 Assembly-CSharp.dll:.PlayerDeath
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.StairsZone
-219efda68c2723ede3e4a8831fd57245 Assembly-CSharp.dll:.PauseMenu
+fd25746c79a6a8dba09d054650c68cef Assembly-CSharp.dll:.PauseMenu
+a671f5c74d4cc22fe66d71d52162c030 Assembly-CSharp.dll:.ControlsScreen
+71e6b9c33686b880f08bacd1c48574a0 Assembly-CSharp.dll:.SplasheFade

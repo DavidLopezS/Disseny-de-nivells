@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
+     <Compile Include="Assets\Scripts\ControlsScreen.cs" />
      <Compile Include="Assets\Scripts\DestroyFinnishedParticle.cs" />
      <Compile Include="Assets\Scripts\EnemyPatrol.cs" />
      <Compile Include="Assets\Scripts\LevelLoader.cs" />
@@ -60,6 +61,7 @@
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerDeath.cs" />
+     <Compile Include="Assets\Scripts\SplasheFade.cs" />
      <Compile Include="Assets\Scripts\StairsZone.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
