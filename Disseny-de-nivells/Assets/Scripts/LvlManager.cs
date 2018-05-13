@@ -12,6 +12,7 @@ public class LvlManager : MonoBehaviour {
     public GameObject respawnParticle;
     public GameObject spikes;
     public GameObject enemies;
+    public GameObject firstCheckPoint;
     public float respawnDealy;
 
 	// Use this for initialization
@@ -34,6 +35,10 @@ public class LvlManager : MonoBehaviour {
                 trigger.enabled = (!trigger.enabled);
             }
         }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            StartCoroutine("RespawnFirstCheckPoint");
+        }
 	}
 
     public void RespawnPlayer(){
@@ -41,6 +46,7 @@ public class LvlManager : MonoBehaviour {
         StartCoroutine("RespawnPlayerCo");
         
     }
+
 
     public IEnumerator RespawnPlayerCo()
     {
@@ -53,4 +59,17 @@ public class LvlManager : MonoBehaviour {
         player.GetComponent<Renderer>().enabled = true;
         Instantiate(respawnParticle, currentCheckPoint.transform.position, currentCheckPoint.transform.rotation);
     }
+
+    public IEnumerator RespawnFirstCheckPoint()
+    {
+        Instantiate(deathParticle, player.transform.position, player.transform.rotation);
+        player.enabled = false;
+        player.GetComponent<Renderer>().enabled = false;
+        yield return new WaitForSeconds(respawnDealy);
+        player.transform.position = firstCheckPoint.transform.position;
+        player.enabled = true;
+        player.GetComponent<Renderer>().enabled = true;
+        Instantiate(respawnParticle, currentCheckPoint.transform.position, currentCheckPoint.transform.rotation);
+    }
+
 }

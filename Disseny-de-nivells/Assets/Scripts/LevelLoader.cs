@@ -16,7 +16,7 @@ public class LevelLoader : MonoBehaviour {
 	void Update () {
 	    if(Input.GetKeyDown(KeyCode.W) && playerInZone)
         {
-            Application.LoadLevel(levelToLoad);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(levelToLoad);
         }	
 	}
 
